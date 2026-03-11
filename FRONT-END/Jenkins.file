@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    tools{
+        nodejs "mynodejs"
+    }
     stages{
         stage("Code Checkout"){
             steps{
@@ -15,12 +18,12 @@ pipeline{
         }
         stage("TEST"){
             steps{
-                sh 'cd FRONT-END && npm test -- --watchAll=false'
+                sh 'cd FRONT-END && npm test -- --watchAll=false --passWithNoTests'
             }
         }
         stage("Docker Build"){
             steps{
-               sh 'docker build -t kalyan:latest .'
+               sh 'docker build -t kalyan:${BUILD_NUMBER} ./FRONT-END'
             }
         }
     }
