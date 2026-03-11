@@ -1,12 +1,14 @@
 import React from "react";
+import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
-import Navbar from "./components/Navbar";
 
 function App() {
+
+  const isLoggedIn = true; // for demo
+
   return (
     <div>
-      <Navbar />
-      <Dashboard />
+      {isLoggedIn ? <Dashboard/> : <Login/>}
     </div>
   );
 }
