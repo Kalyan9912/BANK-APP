@@ -1,1 +1,26 @@
-
+pipeline{
+    agent any
+    stages{
+        stage("Code Checkout"){
+            steps{
+                
+            }
+        }
+        stage("Build"){
+            steps{
+               sh 'cd FRONT-END && npm install'
+               sh 'cd FRONT-END && npm run build'
+            }
+        }
+        stage("TEST"){
+            steps{
+                sh 'cd FRONT-END && npm test -- --watchAll=false'
+            }
+        }
+        stage("Docker Build"){
+            steps{
+               sh 'docker build -t kalyan:latest .'
+            }
+        }
+    }
+}
