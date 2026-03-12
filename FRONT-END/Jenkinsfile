@@ -23,7 +23,12 @@ pipeline{
         }
         stage("Docker Build"){
             steps{
-               sh 'docker build -t kalyan:${BUILD_NUMBER} ./FRONT-END'
+               sh 'docker build  -t kalyan:${BUILD_NUMBER} ./FRONT-END'
+            }
+        }
+        stage("Deploy"){
+            steps{
+                sh 'docker run -itd --name kalyan-${BUILD_NUMBER} -p 12${BUILD_NUMBER}:80 kalyan:${BUILD_NUMBER}'
             }
         }
     }
