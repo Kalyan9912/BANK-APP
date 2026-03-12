@@ -3,6 +3,7 @@ import BalanceCard from "../components/BalanceCard";
 import TransactionList from "../components/TransactionList";
 import TransferForm from "../components/TransferForm";
 import Navbar from "../components/Navbar";
+import MonthlyChart from "../components/MonthlyChart";
 
 function Dashboard(){
 
