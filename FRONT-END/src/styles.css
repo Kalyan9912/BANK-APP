@@ -1,21 +1,40 @@
+/* Page Background */
 body {
-  margin: 0;
+  background: linear-gradient(to bottom, #e9f2ff, #ffffff);
   font-family: Arial, sans-serif;
-  background: #f4f7fb;
 }
 
-/* dashboard layout */
-.dashboard-container {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
+/* Dashboard Title */
+h2 {
+  font-weight: 600;
+  color: #333;
 }
 
-/* card style */
+/* Cards */
 .card {
-  flex: 1;
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
-  color: white;
-  padding: 20px;
   border-radius: 12px;
+  border: none;
+}
+
+/* Balance Card Gradient */
+.balance-card {
+  background: linear-gradient(135deg, #4f8df5, #2a66d9);
+  color: white;
+}
+
+/* Card headers */
+.card-header {
+  background: linear-gradient(135deg, #4f8df5, #2a66d9);
+  color: white;
+  font-weight: 500;
+}
+
+/* Button style */
+.btn-primary {
+  background-color: #2a66d9;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #1f4fb3;
 }
