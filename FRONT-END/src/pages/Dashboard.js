@@ -2,22 +2,19 @@ import React from "react";
 import BalanceCard from "../components/BalanceCard";
 import TransactionList from "../components/TransactionList";
 import TransferForm from "../components/TransferForm";
-import Navbar from "../components/Navbar";
 import MonthlyChart from "../components/MonthlyChart";
 
 function Dashboard(){
 
   return(
 
-    <div>
+    <div className="container mt-4">
 
-      <Navbar/>
+      <div className="row mb-4">
 
-      <div className="hero-section">
+        <div className="col-md-6">
 
-        <div className="container">
-
-          <h2 className="fw-bold">
+          <h2>
             Welcome to <span className="text-primary">FrontBank, John!</span>
           </h2>
 
@@ -25,24 +22,24 @@ function Dashboard(){
 
         </div>
 
+        <div className="col-md-6">
+          <MonthlyChart/>
+        </div>
+
       </div>
 
-      <div className="container mt-4">
+      <div className="row g-4">
 
-        <div className="row g-4">
+        <div className="col-md-4">
+          <BalanceCard/>
+        </div>
 
-          <div className="col-md-4">
-            <BalanceCard/>
-          </div>
+        <div className="col-md-4">
+          <TransactionList/>
+        </div>
 
-          <div className="col-md-4">
-            <TransactionList/>
-          </div>
-
-          <div className="col-md-4">
-            <TransferForm/>
-          </div>
-
+        <div className="col-md-4">
+          <TransferForm/>
         </div>
 
       </div>
