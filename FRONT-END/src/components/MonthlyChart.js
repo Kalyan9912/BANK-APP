@@ -1,25 +1,5 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-} from "chart.js";
-
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-);
 
 function MonthlyChart(){
 
@@ -28,7 +8,7 @@ function MonthlyChart(){
     datasets: [
       {
         label: "Balance",
-        data: [200, 350, 500, 650, 720, 900],
+        data: [200,350,500,650,720,900],
         borderColor: "#3a6fd8",
         backgroundColor: "rgba(58,111,216,0.2)",
         tension: 0.4
@@ -38,9 +18,7 @@ function MonthlyChart(){
 
   const options = {
     responsive: true,
-    plugins:{
-      legend:{ display:false }
-    }
+    maintainAspectRatio: false
   };
 
   return(
@@ -51,7 +29,9 @@ function MonthlyChart(){
 
         <h6>Monthly Balance</h6>
 
-        <Line data={data} options={options}/>
+        <div style={{height:"200px"}}>
+          <Line data={data} options={options}/>
+        </div>
 
       </div>
 
