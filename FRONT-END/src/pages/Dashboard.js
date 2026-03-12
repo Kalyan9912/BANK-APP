@@ -10,9 +10,17 @@ function Dashboard() {
 
       <h1>Welcome to FrontBank</h1>
 
-      <BalanceCard />
-      <TransactionList />
-      <TransferForm />
+      <div style={{
+        display: "flex",
+        gap: "20px",
+        marginTop: "20px"
+      }}>
+
+        <BalanceCard />
+        <TransactionList />
+        <TransferForm />
+
+      </div>
 
     </div>
   );
