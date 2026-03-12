@@ -1,40 +1,36 @@
-/* Page Background */
-body {
-  background: linear-gradient(to bottom, #e9f2ff, #ffffff);
-  font-family: Arial, sans-serif;
+body{
+  background:#eef2f7;
 }
 
-/* Dashboard Title */
-h2 {
-  font-weight: 600;
-  color: #333;
-}
-
-/* Cards */
-.card {
-  border-radius: 12px;
-  border: none;
-}
-
-/* Balance Card Gradient */
-.balance-card {
-  background: linear-gradient(135deg, #4f8df5, #2a66d9);
-  color: white;
-}
-
-/* Card headers */
-.card-header{
-  background: linear-gradient(135deg,#4f8df5,#2a66d9);
+/* Hero section */
+.hero-section{
+  background: linear-gradient(135deg,#5a8dee,#3a6fd8);
+  padding:50px;
   color:white;
-  font-weight:500;
+  border-radius:10px;
+  margin:20px;
 }
 
-/* Button style */
-.btn-primary {
-  background-color: #2a66d9;
-  border: none;
+/* Balance card */
+.balance-card{
+  background: linear-gradient(135deg,#5a8dee,#3a6fd8);
+  color:white;
 }
 
-.btn-primary:hover {
-  background-color: #1f4fb3;
+/* Card */
+.card{
+  border:none;
+  border-radius:12px;
+}
+
+/* Card header */
+.card-header{
+  background: linear-gradient(135deg,#5a8dee,#3a6fd8);
+  color:white;
+}
+
+/* Button */
+.btn-primary{
+  background:#3a6fd8;
+  border:none;
 }
