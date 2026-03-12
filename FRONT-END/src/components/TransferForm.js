@@ -1,20 +1,32 @@
 import React from "react";
 
-function TransferForm(){
+function TransactionList(){
 
   return(
 
     <div className="card shadow">
 
+      <div className="card-header">
+        Recent Transactions
+      </div>
+
       <div className="card-body">
 
-        <h5>Quick Transfer</h5>
+        <ul className="list-group">
 
-        <input className="form-control mb-2" placeholder="Account"/>
+          <li className="list-group-item">
+            Amazon : -120
+          </li>
 
-        <input className="form-control mb-2" placeholder="Amount"/>
+          <li className="list-group-item text-success">
+            Salary : +3000
+          </li>
 
-        <button className="btn btn-primary">Send</button>
+          <li className="list-group-item">
+            Utility Bill : -80
+          </li>
+
+        </ul>
 
       </div>
 
@@ -24,4 +36,4 @@ function TransferForm(){
 
 }
 
-export default TransferForm;
+export default TransactionList;
