@@ -4,21 +4,24 @@ import TransactionList from "../components/TransactionList";
 import TransferForm from "../components/TransferForm";
 
 function Dashboard() {
-
   return (
-    <div style={{padding:"20px"}}>
+    <div className="container mt-4">
 
-      <h1>Welcome to FrontBank</h1>
+      <h2 className="mb-4">Welcome to FrontBank</h2>
 
-      <div style={{
-        display: "flex",
-        gap: "20px",
-        marginTop: "20px"
-      }}>
+      <div className="row">
 
-        <BalanceCard />
-        <TransactionList />
-        <TransferForm />
+        <div className="col-md-4">
+          <BalanceCard />
+        </div>
+
+        <div className="col-md-4">
+          <TransactionList />
+        </div>
+
+        <div className="col-md-4">
+          <TransferForm />
+        </div>
 
       </div>
 
