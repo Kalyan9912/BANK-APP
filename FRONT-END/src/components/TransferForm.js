@@ -1,17 +1,18 @@
 import React from "react";
 
 function TransferForm() {
-
   return (
-    <div style={{border:"1px solid #ccc",padding:"20px",margin:"10px"}}>
+    <div className="card shadow">
+      <div className="card-body">
 
-      <h3>Quick Transfer</h3>
+        <h5>Quick Transfer</h5>
 
-      <input placeholder="Account" /><br/><br/>
-      <input placeholder="Amount" /><br/><br/>
+        <input className="form-control mb-2" placeholder="Account"/>
+        <input className="form-control mb-2" placeholder="Amount"/>
 
-      <button>Send</button>
+        <button className="btn btn-primary">Send</button>
 
+      </div>
     </div>
   );
 }
