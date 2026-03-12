@@ -23,10 +23,10 @@ h2 {
 }
 
 /* Card headers */
-.card-header {
-  background: linear-gradient(135deg, #4f8df5, #2a66d9);
-  color: white;
-  font-weight: 500;
+.card-header{
+  background: linear-gradient(135deg,#4f8df5,#2a66d9);
+  color:white;
+  font-weight:500;
 }
 
 /* Button style */
