@@ -1,21 +1,16 @@
 import React from "react";
 
 function TransactionList() {
-
-  const transactions = [
-    {name:"Amazon",amount:"-120"},
-    {name:"Salary",amount:"+3000"},
-    {name:"Utility Bill",amount:"-80"}
-  ];
-
   return (
-    <div style={{border:"1px solid #ccc",padding:"20px",margin:"10px"}}>
-      <h3>Recent Transactions</h3>
+    <div className="card shadow">
+      <div className="card-body">
+        <h5>Recent Transactions</h5>
 
-      {transactions.map((t,index)=>(
-        <p key={index}>{t.name} : {t.amount}</p>
-      ))}
+        <p>Amazon : -120</p>
+        <p>Salary : +3000</p>
+        <p>Utility Bill : -80</p>
 
+      </div>
     </div>
   );
 }
