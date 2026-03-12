@@ -34,3 +34,8 @@ body{
   background:#3a6fd8;
   border:none;
 }
+.dashboard-bg{
+  background: linear-gradient(to bottom, #e9f2ff, #d6e8ff);
+  min-height: 100vh;
+  padding: 20px;
+}
