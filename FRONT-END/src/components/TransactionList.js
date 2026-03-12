@@ -14,16 +14,24 @@ function TransactionList(){
 
         <ul className="list-group">
 
-          <li className="list-group-item">
-            Amazon : -120
+          <li className="list-group-item d-flex justify-content-between">
+            Amazon
+            <span className="text-danger">-$120.00</span>
           </li>
 
-          <li className="list-group-item text-success">
-            Salary : +3000
+          <li className="list-group-item d-flex justify-content-between">
+            Salary Deposit
+            <span className="text-success">+$3,000.00</span>
           </li>
 
-          <li className="list-group-item">
-            Utility Bill : -80
+          <li className="list-group-item d-flex justify-content-between">
+            Utility Bill
+            <span className="text-danger">-$80.00</span>
+          </li>
+
+          <li className="list-group-item d-flex justify-content-between">
+            Gym Membership
+            <span className="text-danger">-$45.00</span>
           </li>
 
         </ul>
